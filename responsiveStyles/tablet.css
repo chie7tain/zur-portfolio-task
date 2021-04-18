@@ -1,0 +1,68 @@
+/* tablet view */
+@media screen and (min-width:426px) and (max-width:768px){
+
+  /* styles for user-profile-user-objective-container */
+  .user-profile-user-objective-container{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    /* grid-template-columns:1fr 2fr;
+    grid-template-areas: "user-profile user-objective"; */
+  }
+  /* user profile container */
+  .user-profile-container{
+    background-color:var(--main-light-blue);
+    padding: 40px;
+    color:var(--main-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-areas:
+    "user-avatar-container user-address"
+    "user-avatar-container user-contact-details";
+  }
+  .user-address-container{
+    grid-area: user-address;
+  }
+  .user-contact-details-container{
+    grid-area: user-contact-details;
+  }
+  .user-avatar-user-name-role-title-container{
+    grid-area: user-avatar-container;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+     "user-avatar"
+    "user-name-role-title";
+  }
+  .user-avatar-container{
+    grid-area:user-avatar ;
+    width:30%;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-avatar{
+    width:100%;
+  }
+  .user-name-role-title-container{
+    grid-area:user-name-role-title;
+  }
+    /* user objective user skills container */
+  .user-objective-user-skills-container{
+    background-color: var(--main-silver);
+    /* grid-area: user-objective; */
+    padding:40px;
+    color:var(--main-black);
+  }
+  /* cetifications-work-experience-container */
+.cetifications-work-experience-container{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  grid-template-columns:1fr 2fr;
+  grid-template-areas: "user-certifications user-work-experience";
+}
+
+}
