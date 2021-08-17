@@ -16,7 +16,6 @@
     color:var(--main-white);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr; */
     grid-template-areas:
     "user-avatar-container user-address"
     "user-avatar-container user-contact-details";
@@ -30,6 +29,7 @@
   .user-avatar-user-name-role-title-container{
     grid-area: user-avatar-container;
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr;
     grid-template-areas:
      "user-avatar"
@@ -42,9 +42,10 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    border: none;
   }
   .user-avatar{
-    width:100%;
+    /*width:100%;*/
   }
   .user-name-role-title-container{
     grid-area:user-name-role-title;

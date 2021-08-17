@@ -13,10 +13,11 @@
     padding: 10px;
     color:var(--main-white);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "user-avatar-container user-address"
-    "user-avatar-container user-contact-details";
+    "user-avatar-container "
+    "user-address"
+    "user-contact-details";
   }
   .user-address-container{
     grid-area: user-address;
@@ -27,18 +28,18 @@
   .user-avatar-user-name-role-title-container{
     grid-area: user-avatar-container;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-     "user-avatar"
-    "user-name-role-title";
+     "user-avatar user-name-role-title";
   }
   .user-avatar-container{
     grid-area:user-avatar ;
-    width:80%;
+    width:50%;
     height:90px;
     display:flex;
     justify-content: center;
     align-items: center;
+    border: none;
   }
   .user-avatar{
     width:100%;
